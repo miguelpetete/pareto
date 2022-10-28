@@ -24,7 +24,8 @@ dic_ejemplo = dicc(list)
 
 #contador ocurrencias palabras
 def cont(lista, diccionario):
-    for word in lista: 
+    for word in lista:
+        word = word.lower()
         diccionario[word] = diccionario[word] + 1
     return diccionario
 
@@ -34,6 +35,7 @@ dic_ejemplo = cont(list,dic_ejemplo)
 
 #aparicion de una palabra
 def apar(palabra):
+    palabra.lower()
     return dic_ejemplo[palabra]
     
 #print(apar("aaa"))
