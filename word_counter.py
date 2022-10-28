@@ -14,6 +14,7 @@ list.remove('')
 def dicc(lista):
     diccionario = {}
     for word in lista: 
+        word = word.lower()
         diccionario[word] = 0
     return diccionario
 
